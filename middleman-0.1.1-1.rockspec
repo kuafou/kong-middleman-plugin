@@ -9,8 +9,8 @@ version = "0.1.1-1"
 supported_platforms = {"linux", "macosx"}
 
 source = {
-  url = "https://github.com/pantsel/kong-middleman-plugin",
-  tag = "0.1.1"
+  url = "git://github.com/kuafou/kong-middleman-plugin",
+-- tag = "0.1.1"
 }
 
 description = {
@@ -27,6 +27,5 @@ build = {
     ["kong.plugins.middleman.access"] = "src/access.lua",
     ["kong.plugins.middleman.handler"] = "src/handler.lua",
     ["kong.plugins.middleman.schema"] = "src/schema.lua",
-	["kong.plugins.middleman.json"] = "src/json.lua"
   }
 }
